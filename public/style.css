@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+body::before {
+    background-image: url("https://images.unsplash.com/photo-1657896279989-f7419cb82799?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHJvYXN0ZXJ5JTIwY29mZmVlfGVufDB8fDB8fHww");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0.5;
+    top: 0;
+    left:0;
+    content: '';
+}
+
+body p {
+    font-size: 20px;
+    font-weight: bold;
+}
+h1 {
+    color: #880808;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.outerContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.productContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2px;
+    margin: 10px;
+    padding: 30px;
+    color: brown;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    width: 250px;
+    max-width: 800px;
+    min-width: 275px;
+    border: 12px solid black;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+a{
+    text-decoration: none;
+}
